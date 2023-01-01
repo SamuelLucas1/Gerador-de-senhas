@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de senhas</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <link rel="website icon" type="png" href="/Gerador de Senha/assets/6646470.png">
+
+</head>
+<body>
+    <img class="logo" src="./assets/logo.png "/>
+
+    <div class="navbar">
+        <div class="box" href = "javascript: Void ('#') "onclick =" window.location = 'https://linktr.ee/Samuel_Mendes'">
+            <div class="icon linktree">
+                <ion-icon name="link-outline"></ion-icon>
+            </div>
+            <p>Linktree</p>
+        </div>
+        <div class="box" href = "javascript: Void ('#') "onclick =" window.location = 'https://www.instagram.com/samuu.mendes/'">
+            <div class="icon instagram">
+                <ion-icon name="logo-instagram"></ion-icon>
+            </div>
+            <p>Instagram</p>
+        </div>
+        <div class="box" href = "javascript: Void ('#') "onclick =" window.location = 'https://twitter.com/KapuchynoEnsina'">
+            <div class="icon twitter">
+                <ion-icon name="logo-twitter"></ion-icon>
+            </div>
+            <p>Twitter</p>
+        </div>
+    </div>
+
+    <main class="container-input">
+    <span>Tamanho <span id="valor"></span> caracteres </span>
+    <input id="slider" class="slider" type="range" min="8" max="25" value="15">
+    
+    <button id="button" class="button-cta" onclick="generatePassword()">Gerar senha</button>
+    </main>
+
+    <div id="container-password" class="container-password hide" onclick="copyPassword()">
+        <span class="title">Sua senha gerada foi:</span>
+        <span id="password" class="password"></span>
+        <span class="tooltip">Clique na senha para copiar, ou segure com o mouse.☝</span>
+    </div>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>
